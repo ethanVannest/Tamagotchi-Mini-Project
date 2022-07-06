@@ -1,5 +1,7 @@
 body {
-    background-image:
+    background-image: url(../imgs/2102.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 p {
     color: aqua
