@@ -1,12 +1,13 @@
 // console.log('this works')
+//This is what changes the name class on the html
 const startGame = document.querySelector('button')
 startGame.addEventListener('click', event => {
     petName = prompt('What is your pets name?')
     startGame.petName
     if (petName === '') {
-        petName = 'The best pet';
+        petName = 'The Best Pet';
     }
-    console.log(petName)
+    document.getElementById('name').innerText = (petName) 
 })
 // let petName = prompt('What is your pets name?')
 // petName =document.getElementById('name')
