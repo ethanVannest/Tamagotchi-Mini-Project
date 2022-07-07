@@ -1,8 +1,9 @@
 body {
-    background-image: url(../imgs/2102.gif);
+    background: url(../imgs/2102.gif);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: darkolivegreen;
 }
-p {
-    color: aqua
+div {
+    color: whitesmoke
 }

@@ -1,9 +1,10 @@
 // console.log('this works')
 let petName = prompt('What is your pets name?')
+// petName =document.getElementById('name')
 if (petName === null) {
     petName = 'The best pet'
 }
-// console.log(petName)
+console.log(petName)
 
 class game {
     constructor(){
