@@ -1,22 +1,29 @@
 // console.log('this works')
-let petName = prompt('What is your pets name?')
+const startGame = document.querySelector('button')
+startGame.addEventListener('click', event => {
+    petName = prompt('What is your pets name?')
+    startGame.petName
+    if (petName === '') {
+        petName = 'The best pet';
+    }
+    console.log(petName)
+})
+// let petName = prompt('What is your pets name?')
 // petName =document.getElementById('name')
-if (petName === null) {
-    petName = 'The best pet'
-}
-console.log(petName)
 
-class game {
+class Game {
     constructor(){
 
         
     }
 }
-class tam {
+const game = new Game
+class Tam {
     constructor(){
 
     }
 }
+const tam = new Tam
 //add ability to name pet
 //add a hunger, sleepiness, boredom, and age(set time interval to age every 15 seconds)
 //button to feed pet, turn screen to dark mode, play with pet
