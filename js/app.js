@@ -26,25 +26,25 @@ class Game {
             setInterval(() => {
                 hungerCount -= 1
                 petHunger.innerText = hungerCount
-        }, 10000);
+        }, 15000);
         });
         startGame.addEventListener('click', function () {
             setInterval(() => {
                 boredomCount -= 1
                 petBoredom.innerText = boredomCount
-        }, 5000);
+        }, 15000);
         });
         startGame.addEventListener('click', function () {
             setInterval(() => {
                 sleepinessCount -= 1
                 petSleepiness.innerText = sleepinessCount
-        }, 7000);
+        }, 15000);
         });
         startGame.addEventListener('click', function () {
             setInterval(() => {
                 ageCount += 1
                 petAge.innerText = ageCount
-        }, 3000);
+        }, 15000);
         });
     }
 }
@@ -60,3 +60,7 @@ const tam = new Tam
 //add a hunger, sleepiness, boredom, and age(set time interval to age every 15 seconds)
 //button to feed pet, turn screen to dark mode, play with pet
 //display a character on screen
+//buttons to turn off the lights, feed the pet, play with the pet 
+//pet should die if hunger,boredom,or sleepiness hits 10
+//pet morphs at the age of 5
+//animate the character across the screen
