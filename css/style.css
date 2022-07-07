@@ -1,9 +1,23 @@
-body {
+html {
     background: url(../imgs/2102.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: darkolivegreen;
 }
 div {
-    color: whitesmoke
+    color: black
+}
+img {
+    display: block;
+    margin: 15em 13em 0 10em;
+    width: 20%;
+}
+p {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    background-color: darkolivegreen;
+    color: white;
+    padding: 0 0 0 0px;
+    margin: auto;
 }
