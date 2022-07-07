@@ -14,11 +14,42 @@ startGame.addEventListener('click', event => {
 
 class Game {
     constructor(){
-
-        
+        let petHunger = document.getElementById('hunger')
+        let petBoredom = document.getElementById('boredom')
+        let petSleepiness = document.getElementById('sleepiness')
+        let petAge = document.getElementById('age')
+        let hungerCount = 10
+        let boredomCount = 10
+        let sleepinessCount = 10
+        let ageCount = 0
+        startGame.addEventListener('click', function () {
+            setInterval(() => {
+                hungerCount -= 1
+                petHunger.innerText = hungerCount
+        }, 10000);
+        });
+        startGame.addEventListener('click', function () {
+            setInterval(() => {
+                boredomCount -= 1
+                petBoredom.innerText = boredomCount
+        }, 5000);
+        });
+        startGame.addEventListener('click', function () {
+            setInterval(() => {
+                sleepinessCount -= 1
+                petSleepiness.innerText = sleepinessCount
+        }, 7000);
+        });
+        startGame.addEventListener('click', function () {
+            setInterval(() => {
+                ageCount += 1
+                petAge.innerText = ageCount
+        }, 3000);
+        });
     }
 }
 const game = new Game
+
 class Tam {
     constructor(){
 
