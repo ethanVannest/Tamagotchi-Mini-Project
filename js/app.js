@@ -56,10 +56,10 @@ class Tam {
     }
 }
 const tam = new Tam
-//add ability to name pet
-//add a hunger, sleepiness, boredom, and age(set time interval to age every 15 seconds)
+//add ability to name pet * 
+//add a hunger, sleepiness, boredom, and age(set time interval to age every 15 seconds) *
 //button to feed pet, turn screen to dark mode, play with pet
-//display a character on screen
+//display a character on screen *
 //buttons to turn off the lights, feed the pet, play with the pet 
 //pet should die if hunger,boredom,or sleepiness hits 10
 //pet morphs at the age of 5
