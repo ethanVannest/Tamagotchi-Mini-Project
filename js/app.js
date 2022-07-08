@@ -25,41 +25,43 @@ class Game {
         startGame.addEventListener('click', function () {
             setInterval(() => {
                 hungerCount -= 1
-                petHunger.innerText = hungerCount
+                petHunger.innerText = `Hunger ${hungerCount}`
                 if (hungerCount === 0){
                     alert(`${petName} has passed away...`)
                     location.reload()
                 }
-        }, 15000);
+        }, 1500);
         });
         startGame.addEventListener('click', function () {
             setInterval(() => {
                 boredomCount -= 1
-                petBoredom.innerText = boredomCount
+                petBoredom.innerText = `Boredom ${boredomCount}`
                     if(boredomCount === 0){
                         alert(`${petName} died of boredom...`)
                         location.reload()
                     }
-        }, 15000);
+        }, 1500);
         });
         startGame.addEventListener('click', function () {
             setInterval(() => {
                 sleepinessCount -= 1
-                petSleepiness.innerText = sleepinessCount
+                petSleepiness.innerText = `Sleepiness ${sleepinessCount}`
                     if(sleepinessCount === 0){
                         alert(`${petName} didn\'t get enough sleep...`)
                         location.reload()
                     }
-        }, 15000);
+        }, 1500);
         });
         startGame.addEventListener('click', function () {
             setInterval(() => {
                 ageCount += 1
-                petAge.innerText = ageCount
+                petAge.innerText = `Age ${ageCount}`
                     if(ageCount === 15){
-                        alert(`${petName} is Evolving!` )
+                        alert(`${petName} is Evolving!`);
+                        let bulba = document.getElementById('bulbasaur')
+                        bulba = "/Users/ethanvannest/Desktop/Tamagotchi-Mini-Project/imgs/ivysaur.gif"
                 }
-        }, 15000);
+        }, 150);
         });
     }
 }
@@ -79,17 +81,18 @@ class Tam {
             // console.log(game.startGame)
         })
         petSleep.addEventListener('click', event => {
-            document.body.style.background = '(../imgs/ivysaur.gif)'
+            document.body.style.backgroundImage ='url(/Users/ethanvannest/Desktop/Tamagotchi-Mini-Project/imgs/game_sleeping_background.gif)'
+            //how to get an img to take the place of the current background for a set amount of time as well as cover the page
         })
     }
 }
 const tam = new Tam
 //add ability to name pet * 
 //add a hunger, sleepiness, boredom, and age(set time interval to age every 15 seconds) *
-    //HOW TO MAKE NAME OF VALUE NOT DISSAPEAR
+    //HOW TO MAKE NAME OF VALUE NOT DISSAPEAR*
 //button to feed pet, turn screen to dark mode, play with pet
 //display a character on screen *
-//buttons to turn off the lights, feed the pet, play with the pet 
-//pet should die if hunger,boredom,or sleepiness hits 10
+//buttons to turn off the lights*, feed the pet, play with the pet 
+//pet should die if hunger,boredom,or sleepiness hits 10 *
 //pet morphs at the age of 15
 //animate the character across the screen

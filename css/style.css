@@ -1,7 +1,7 @@
 /* *{
     border: 2px solid black ;
 } */
-html {
+body {
     background: url(../imgs/2102.gif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,7 +31,7 @@ p {
     display: flex;
     justify-content: center;
     font-size: 30px;
-    background-color: darkolivegreen;
+    background-color: rgb(85,107,47,.6);
     color: white;
     padding: 0px;
     margin: auto;
