@@ -1,16 +1,31 @@
+/* *{
+    border: 2px solid black ;
+} */
 html {
     background: url(../imgs/2102.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: darkolivegreen;
 }
-div {
-    color: black
-}
 img {
-    display: block;
     margin: 15em 13em 0 10em;
     width: 20%;
+}
+img:hover{
+    animation-name: rotate;
+    animation-duration: 0.7s;
+    animation-direction: alternate;
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+div {
+    color: black
 }
 p {
     display: flex;
@@ -18,10 +33,25 @@ p {
     font-size: 30px;
     background-color: darkolivegreen;
     color: white;
-    padding: 0 0 0 0px;
+    padding: 0px;
     margin: auto;
 }
 button {
-    color: burlywood;
+    color: #84EDC4;
     background-color: darkolivegreen;
 }
+#feed button, #sleep button, #play button {    
+    font-size: 20px;
+    width: 150px;
+    border: 2px solid #372A2C;
+    padding: 10px;
+}
+#start button {
+    position: absolute;
+    font-size: 20px;
+
+}
+
+#feed button{border-radius: 50%;}
+#sleep button{border-radius: 50%;}
+#play button{border-radius: 50%;}

@@ -64,6 +64,7 @@ class Game {
     }
 }
 const game = new Game
+//NEED TO FIX THE ISSUE OF CLASSES NOT BEING ABLE TO BE ACCESSED IN DOT NOTATION
 // console.log(game.petHunger)
 class Tam {
     constructor(){
@@ -72,7 +73,13 @@ class Tam {
         let playWithPet = document.getElementById("play")
         feedPet.addEventListener('click', event => {
             // game.petHunger.innerText = 10
-            console.log(game.startGame)
+            //access the class of game 
+                //use dot notation to access the count of the pets hunger
+                //CLICK to change the hungercount to 10 
+            // console.log(game.startGame)
+        })
+        petSleep.addEventListener('click', event => {
+            document.body.style.background = '(../imgs/ivysaur.gif)'
         })
     }
 }
