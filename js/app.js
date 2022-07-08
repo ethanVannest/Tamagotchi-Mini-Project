@@ -56,11 +56,14 @@ class Game {
             setInterval(() => {
                 ageCount += 1
                 petAge.innerText = `Age ${ageCount}`
+                let bulba = document.getElementById('bulbasaur').getAttribute('src')
+                let ivysaur = document.createElement('img').setAttribute('src','../Tamagotchi-Mini-Project/imgs/ivysaur.gif') 
+                //HOW TO CHANGE THE PICTURE FROM THE WNES GIF TO IVYSAUR GIF
                     if(ageCount === 15){
                         alert(`${petName} is Evolving!`);
-                        let bulba = document.getElementById('bulbasaur')
-                        bulba = "/Users/ethanvannest/Desktop/Tamagotchi-Mini-Project/imgs/ivysaur.gif"
-                }
+                        bulba = ivysaur
+                        // "/Users/ethanvannest/Desktop/Tamagotchi-Mini-Project/imgs/ivysaur.gif"
+                    }
         }, 150);
         });
     }
@@ -82,7 +85,7 @@ class Tam {
         })
         petSleep.addEventListener('click', event => {
             document.body.style.backgroundImage ='url(/Users/ethanvannest/Desktop/Tamagotchi-Mini-Project/imgs/game_sleeping_background.gif)'
-            //how to get an img to take the place of the current background for a set amount of time as well as cover the page
+            //how to get an img to take the place of the current background for a set amount of time as well as cover the page*
         })
     }
 }
