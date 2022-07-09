@@ -1,11 +1,8 @@
-/* *{
-    border: 2px solid black ;
-} */
 body {
     background: url(../imgs/2102.gif);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: darkolivegreen;
+    background-color: black;
 }
 img {
     margin: 15em 13em 0 10em;
@@ -40,18 +37,46 @@ button {
     color: #84EDC4;
     background-color: darkolivegreen;
 }
-#feed button, #sleep button, #play button {    
+#feed button, #sleep button, #play button, #darkMode button {    
     font-size: 20px;
     width: 150px;
     border: 2px solid #372A2C;
     padding: 10px;
+}
+#feed button{
+    position: fixed;
+    bottom: 35px;
+    left: 1%;
+}
+#sleep button{
+    position: fixed;
+    bottom: 35px;
+    left: 12%;
+}
+#play button{
+    position: fixed;
+    bottom: 35px;
+    left: 23%;
 }
 #start button {
     position: absolute;
     font-size: 20px;
 
 }
-
+#darkMode button {
+    position: fixed;
+    bottom: 35px;
+    right: 10px;
+}
+.dark-mode-p {
+    color: white;
+    background-color: rgb(0, 0, 0, .6);
+  }
+.dark-mode-button{
+    color: white;
+    background-color: black;
+}
 #feed button{border-radius: 50%;}
 #sleep button{border-radius: 50%;}
 #play button{border-radius: 50%;}
+#darkMode button{border-radius: 50%;}
